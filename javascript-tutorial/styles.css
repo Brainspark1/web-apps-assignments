@@ -1,0 +1,53 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  background-color: blue;
+  color: white;
+}
+
+button {
+  background-color: gray;
+  font-size: 2rem;
+}
+
+#greeting-output {
+  font-size: 10rem;
+}
+
+#flex-div {
+  display: flex;
+  gap: 5rem;
+}
+
+#greeting-image {
+  font-size: 10rem;
+  margin-left: 7rem;
+
+  animation: spin-image infinite 2s linear;
+}
+
+#buttonClickText,
+#buttonClickDate,
+#buttonSumText {
+  font-size: 3rem;
+  padding: 20px;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+#number1,
+#number2 {
+  font-size: 2rem;
+  width: 150px;
+}
+
+@keyframes spin-image {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

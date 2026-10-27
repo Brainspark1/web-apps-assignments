@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- greeting based on time of day -->
+    <h1>Example 1: Dynamic Greeting</h1>
+    <div id="flex-div">
+      <div id="greeting-image"></div>
+      <div id="greeting-output"></div>
+    </div>
+
+    <!-- show text when click a button -->
+    <h1>Example 2: Show Text with Button</h1>
+    <button id="textButton" onclick="setButtonText()">Click Me</button>
+    <div id="buttonClickText"></div>
+
+    <!-- show date when click a button -->
+    <h1>Example 3: Show Date with Button</h1>
+    <button id="dateButton" onclick="setButtonDate()">Date?</button>
+    <div id="buttonClickDate"></div>
+
+    <!-- addition calculator -->
+    <h1>Example 4: Add Two Numbers</h1>
+    <div>
+      <label for="number1">Number 1: </label>
+      <input type="text" id="number1" name="number1" />
+    </div>
+    <div style="padding-top: 30px; padding-bottom: 30px">
+      <label for="number1">Number 2: </label>
+      <input type="text" id="number2" name="number2" />
+    </div>
+
+    <button onclick="findSum()">Find Sum!</button>
+    <div id="buttonSumText"></div>
+  </body>
+  <script src="script.js"></script>
+</html>
