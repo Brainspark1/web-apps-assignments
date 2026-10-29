@@ -37,6 +37,11 @@ button {
   padding: 20px;
 }
 
+#changeBox {
+  width: 20px;
+  height: 20px;
+}
+
 label {
   font-size: 1.5rem;
 }

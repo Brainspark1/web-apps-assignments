@@ -121,11 +121,14 @@ function findLength() {
   let text = document.getElementById("enterText").value;
   let length = text.length;
 
-  outputLengthText.textContent = text + " has " + length + " characters!";
+  outputLengthText.textContent =
+    "'" + text + "'" + " has " + length + " characters!";
 }
 
+// passing in checkbox to determine when it is checked or not and do things accordingly
 function changePassword(checkbox) {
   if (checkbox.checked) {
+    // changing type of text in textfield to show or hide password
     enterPassField.type = "text";
     checkLabel.textContent = "Hide Password";
   } else {
