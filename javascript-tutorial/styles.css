@@ -8,6 +8,7 @@
 button {
   background-color: gray;
   font-size: 2rem;
+  margin-top: 20px;
 }
 
 #greeting-output {
@@ -23,12 +24,15 @@ button {
   font-size: 10rem;
   margin-left: 7rem;
 
+  display: inline-block;
   animation: spin-image infinite 2s linear;
 }
 
 #buttonClickText,
 #buttonClickDate,
-#buttonSumText {
+#buttonSumText,
+#outputLengthText,
+#moodyText {
   font-size: 3rem;
   padding: 20px;
 }
@@ -38,9 +42,20 @@ label {
 }
 
 #number1,
-#number2 {
+#number2,
+#enterText,
+#enterPass {
   font-size: 2rem;
-  width: 150px;
+  width: 250px;
+}
+
+#changeBox {
+  margin-top: 20px;
+}
+
+.changedText {
+  color: red;
+  font-size: 3rem;
 }
 
 @keyframes spin-image {

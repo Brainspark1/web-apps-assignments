@@ -35,8 +35,33 @@
       <input type="text" id="number2" name="number2" />
     </div>
 
-    <button onclick="findSum()">Find Sum!</button>
-    <div id="buttonSumText"></div>
+    <!-- get length of string -->
+    <h1>Example 5: Length of String</h1>
+    <div>
+      <label for="enterText">Text: </label>
+      <input type="text" id="enterText" name="enterText" />
+    </div>
+    <button onclick="findLength()" style="margin-top: 40px;">Find Length!</button>
+    <div id="outputLengthText"></div>
+
+    <!-- change password text -->
+    <h1>Example 6: Change Password Text</h1>
+    <div>
+      <label for="enterPass">Password: </label>
+      <input type="password" id="enterPass" name="enterPass" />
+      <input name="check" type="checkbox" onclick="changePassword(this)" id="changeBox"></button>
+      <label for="check" id="checkLabel">Show Password</label>
+    </div>
+
+     <!-- change color and size of text -->
+    <h1>Example 7: Change Color and Size of Text</h1>
+    <p id="changeText">Click the button below to change this text!</p>
+    <button id="changeTextButton" onclick="changeText()">Click me!</button>
+
+    <!--  -->
+    <h1>Example 8: Hide/Show HTML Elements</h1>
+    <button id="toggleDisplayButton" onclick="toggleDisplay()">Toggle Display!</button>
+    <div id="moodyText"></div>
   </body>
   <script src="script.js"></script>
 </html>

@@ -11,6 +11,14 @@ const buttonSumText = document.getElementById("buttonSumText");
 const buttonText = document.getElementById("textButton");
 const buttonDate = document.getElementById("dateButton");
 
+const outputLengthText = document.getElementById("outputLengthText");
+const enterPassField = document.getElementById("enterPass");
+const changeTextParagraph = document.getElementById("changeText");
+const changeTextButton = document.getElementById("changeTextButton");
+const moodyText = document.getElementById("moodyText");
+const toggleDisplayButton = document.getElementById("toggleDisplayButton");
+const checkLabel = document.getElementById("checkLabel");
+
 const dayNames = [
   "Monday",
   "Tuesday",
@@ -38,6 +46,8 @@ const monthNames = [
 
 let toggledText = false;
 let toggledDate = false;
+let toggledColorText = false;
+let toggledMoody = false;
 
 function setGreeting() {
   let now = new Date(); // built in class in Javascript
@@ -105,6 +115,47 @@ function findSum() {
   let sum = num1 + num2;
 
   buttonSumText.textContent = sum;
+}
+
+function findLength() {
+  let text = document.getElementById("enterText").value;
+  let length = text.length;
+
+  outputLengthText.textContent = text + " has " + length + " characters!";
+}
+
+function changePassword(checkbox) {
+  if (checkbox.checked) {
+    enterPassField.type = "text";
+    checkLabel.textContent = "Hide Password";
+  } else {
+    enterPassField.type = "password";
+    checkLabel.textContent = "Show Password";
+  }
+}
+
+function changeText() {
+  toggledColorText = !toggledColorText;
+
+  if (toggledColorText) {
+    changeTextParagraph.classList.add("changedText");
+    changeTextButton.textContent = "Hide";
+  } else {
+    changeTextParagraph.classList.remove("changedText");
+    changeTextButton.textContent = "Click Me!";
+  }
+}
+
+function toggleDisplay() {
+  toggledMoody = !toggledMoody;
+
+  if (toggledMoody) {
+    moodyText.textContent = "This is a moody message!";
+    toggleDisplayButton.textContent = "Hide";
+  } else {
+    moodyText.textContent = "";
+    toggleDisplayButton.textContent = "Toggle Display!";
+  }
 }
 
 window.onload = function () {
