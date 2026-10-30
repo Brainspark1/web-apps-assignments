@@ -44,6 +44,7 @@ const monthNames = [
   "December",
 ];
 
+// boolean toggle variables for each examples that need it - if true, show the text, if false, hide the text
 let toggledText = false;
 let toggledDate = false;
 let toggledColorText = false;
@@ -69,6 +70,7 @@ function setGreeting() {
 }
 
 function setButtonText() {
+  // toggle logic being set by changing the state of the toggle variable - if wasn't toggled before (false), set toggled to true, so now when the method is called and toggled is true, show the content. similarly if it was toggled before (true), set toggled to false, so now when the method is called toggled is no false, do not show the content as expected - this same pattern repeats in many methods below with the same logic
   toggledText = !toggledText;
 
   if (toggledText) {
